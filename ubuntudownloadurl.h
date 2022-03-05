@@ -6,6 +6,7 @@
 
 int downloadurlubuntu(char* url,char* destination)
 {
+
 curl_global_init(CURL_GLOBAL_ALL);
 
 CURL * myHandle;
