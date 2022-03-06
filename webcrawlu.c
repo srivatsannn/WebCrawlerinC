@@ -45,7 +45,7 @@ int main(void)
   //https(destination);
   //http(destination);
   char fil[100];
-  strcat (fil,"grep -Eo 'https?://[^\";]+'  ");
+  strcat (fil,"grep -Eo -h 'https?://[^\";]+'  ");
   strcat(fil,destination);
   strcat(fil," >> urls.txt");
   int r;
@@ -72,7 +72,7 @@ int main(void)
      //https(destinations);
      //httpubuntu(destination);
      char fil1[100];
-     strcat (fil1,"grep -Eo 'https?://[^\";]+'  ");
+     strcat (fil1,"grep -Eo -h 'https?://[^\";]+'  ");
      strcat(fil1,destinations);
      strcat(fil1," >> urls.txt");
      int r;
